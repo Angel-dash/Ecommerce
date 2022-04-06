@@ -62,14 +62,14 @@
     transform: translateY(-100%) translateX(-100vmax);
 }
 
-.loginForm>div,
+.loginform>div,
 .signUpForm>div {
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.loginForm>div>input,
+.loginform>div>input,
 .signUpForm>div>input {
     padding: 1vmax 4vmax;
     padding-right: 1vmax;
@@ -81,7 +81,7 @@
     outline: none;
 }
 
-.loginForm>div>svg,
+.loginform>div>svg,
 .signUpForm>div>svg {
     position: absolute;
     transform: translateX(1vmax);
@@ -89,7 +89,7 @@
     color: rgba(0, 0, 0, 0.623);
 }
 
-.loginForm>a {
+.loginform>a {
     color: rgba(0, 0, 0, 0.651);
     text-decoration: none;
     align-self: flex-end;
@@ -97,7 +97,7 @@
     font: 500 0.8vmax "Gill Sans";
 }
 
-.loginForm>a:hover {
+.loginform>a:hover {
     color: black;
 }
 
@@ -170,7 +170,7 @@
         background-color: white;
     }
 
-    .LoginSignUpBox {
+    .loginSignUpBox {
         width: 100vw;
         height: 95vh;
     }
@@ -183,23 +183,23 @@
         font: 300 1.5vmax "Roboto";
     }
 
-    .loginForm,
+    .loginform,
     .signUpForm {
         padding: 5vmax;
     }
 
-    .loginForm>div>input,
+    .loginform>div>input,
     .signUpForm>div>input {
         padding: 2.5vmax 5vmax;
         font: 300 1.7vmax cursive;
     }
 
-    .loginForm>div>svg,
+    .loginform>div>svg,
     .signUpForm>div>svg {
         font-size: 2.8vmax;
     }
 
-    .loginForm>a {
+    .loginform>a {
         font: 500 1.8vmax "Gill Sans";
     }
 

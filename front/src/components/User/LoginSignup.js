@@ -9,7 +9,6 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 const LoginSignup = () => {
 	const loginTab = useRef(null);
-
 	const registerTab = useRef(null);
 	const switcherTab = useRef(null);
 
@@ -24,9 +23,9 @@ const LoginSignup = () => {
 	const {name, email, password} = user;
 
 	const [avatar, setAvatar] = useState();
-	const [avatarPreview, setAvatarPreview] = useState();
+	const [avatarPreview, setAvatarPreview] = useState("./Profile.png");
 	const logInSubmit = () => {
-		console.log("logi  Form submitted");
+		console.log("login  Form submitted");
 	};
 
 	const registerSubmit = (e) => {
@@ -49,7 +48,7 @@ const LoginSignup = () => {
 			};
 			reader.readAsDataURL(e.target.files[0]);
 		} else {
-			setUser({...user, [e.target]: e.target.value});
+			setUser({...user, [e.target.name]: e.target.value});
 		}
 	};
 	const switchTabs = (e, tab) => {
@@ -100,7 +99,7 @@ const LoginSignup = () => {
 								onChange={(e) => setLoginPassword(e.target.value)}
 							/>
 						</div>
-						<Link to="password/forgot">Forgot Password?</Link>
+						<Link to="/password/forgot">Forgot Password?</Link>
 						<input type="submit" value="Login" className="loginBtn" />
 					</form>
 					<form
