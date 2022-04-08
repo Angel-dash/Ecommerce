@@ -11,7 +11,7 @@
     left: 0;
 }
 
-.loginSignUpBox {
+.LoginSignUpBox {
     background-color: white;
     width: 25vw;
     height: 70vh;
@@ -38,7 +38,7 @@
     color: tomato;
 }
 
-.loginSignUpBox>div>button {
+.LoginSignUpBox>div>button {
     background-color: tomato;
     height: 3px;
     width: 50%;
@@ -46,7 +46,7 @@
     transition: all 0.5s;
 }
 
-.loginform,
+.loginForm,
 .signUpForm {
     display: flex;
     flex-direction: column;
@@ -62,14 +62,14 @@
     transform: translateY(-100%) translateX(-100vmax);
 }
 
-.loginform>div,
+.loginForm>div,
 .signUpForm>div {
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.loginform>div>input,
+.loginForm>div>input,
 .signUpForm>div>input {
     padding: 1vmax 4vmax;
     padding-right: 1vmax;
@@ -81,7 +81,7 @@
     outline: none;
 }
 
-.loginform>div>svg,
+.loginForm>div>svg,
 .signUpForm>div>svg {
     position: absolute;
     transform: translateX(1vmax);
@@ -89,7 +89,7 @@
     color: rgba(0, 0, 0, 0.623);
 }
 
-.loginform>a {
+.loginForm>a {
     color: rgba(0, 0, 0, 0.651);
     text-decoration: none;
     align-self: flex-end;
@@ -97,7 +97,7 @@
     font: 500 0.8vmax "Gill Sans";
 }
 
-.loginform>a:hover {
+.loginForm>a:hover {
     color: black;
 }
 
@@ -157,11 +157,11 @@
     transform: translateX(0%);
 }
 
-.shiftToNeutralFrom {
+.shiftToNeutralForm {
     transform: translateX(0%) translateY(-100%);
 }
 
-.shiftToRight{
+.shiftToRight {
     transform: translateX(100%);
 }
 
@@ -170,7 +170,7 @@
         background-color: white;
     }
 
-    .loginSignUpBox {
+    .LoginSignUpBox {
         width: 100vw;
         height: 95vh;
     }
@@ -183,23 +183,23 @@
         font: 300 1.5vmax "Roboto";
     }
 
-    .loginform,
+    .loginForm,
     .signUpForm {
         padding: 5vmax;
     }
 
-    .loginform>div>input,
+    .loginForm>div>input,
     .signUpForm>div>input {
         padding: 2.5vmax 5vmax;
         font: 300 1.7vmax cursive;
     }
 
-    .loginform>div>svg,
+    .loginForm>div>svg,
     .signUpForm>div>svg {
         font-size: 2.8vmax;
     }
 
-    .loginform>a {
+    .loginForm>a {
         font: 500 1.8vmax "Gill Sans";
     }
 
