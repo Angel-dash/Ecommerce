@@ -10,10 +10,10 @@ const options = {
 	value: 2.5,
 	ishHalf: true,
 };
-const Product = ({product}) => {
+const ProductCard = ({product}) => {
 	return (
 		<>
-			<Link className="productCard" to={`/Product/${product._id}`}>
+			<Link className="productCard" to={`/product/${product._id}`}>
 				<img src={require("./Images/Blueshirt.jpg")} alt={product.name} />
 				<p>{product.name}</p>
 				<div>
@@ -26,18 +26,4 @@ const Product = ({product}) => {
 	);
 };
 
-/*const Product = ({product}) => {
-	return (
-		<Link className="productCard" to={`/Product/${product._id}`}>
-			<img src={product.image[0].url} alt={product.name} />
-			<p>{product.name}</p>
-			<div>
-				<ReactStars {...options} />
-				<span>(256 Reviews)</span>
-			</div>
-			<span>{product.price}</span>
-		</Link>
-	);
-};*/
-
-export default Product;
+export default ProductCard;
